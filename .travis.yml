@@ -1,0 +1,31 @@
+#
+# travis-ci.org configuration to automatically deploy new build after push
+#
+# You will need the following configured in your Travis environment:
+#   GITHUB_TOKEN - generate at https://github.com/settings/tokens/new
+#
+# This is in a separate repository because GitHub pages for users and
+# organizations need to be in the "master" -branch, and mixing the source with
+# the generated files in one repo is a bad idea.
+#
+
+language: python
+
+install:
+  # Update Hugo version here when necessary
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.47.1/hugo_0.47.1_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  - pip install Pygments
+
+script:
+  - hugo
+
+# Deploy to GitHub pages
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: public
+  github-token: $GITHUB_TOKEN
+  target-branch: master
+  repo: cocreators-ee/cocreators-ee.github.io  # Change this to your repo
+  fqdn: cocreators.ee                # Change, or remove as necessary
