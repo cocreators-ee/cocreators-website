@@ -5,10 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: data
-  label: Data
-  create: all
-  match: "*"
+  path: data/projects
+  label: Projects
+  create: documents
+  match: "*.yaml"
+  new_doc_ext: ".yaml"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
