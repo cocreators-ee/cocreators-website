@@ -1,9 +1,8 @@
 .intro-text div {
-  text-shadow:
-   -1px -1px 0 #000,
+    text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-     1px 1px 0 #000;
+    1px 1px 0 #000;
 }
 
 .section-subheading {
@@ -12,7 +11,7 @@
 
 .text-brighter {
     color: #bbb;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
 
 .filler {
@@ -21,16 +20,16 @@
 
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .navbar-brand img {
-  animation: spin 5s infinite cubic-bezier(0.77, 0, 0.175, 1);
+    animation: spin 5s infinite cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .clients .heading {
@@ -43,4 +42,12 @@
 
 #portfolio .portfolio-item .portfolio-link img.img-responsive {
     height: auto;
+}
+
+#notices .notice {
+    border: 1px solid #9ab5c1;
+    margin: 0 0 3rem 0;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    background: #f7f7f7;
 }
