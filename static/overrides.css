@@ -44,6 +44,10 @@
     height: auto;
 }
 
+#notices {
+    margin: 0 2rem;
+}
+
 #notices .notice {
     border: 1px solid #9ab5c1;
     margin: 0 0 3rem 0;

@@ -178,19 +178,18 @@ googleAnalytics = "UA-92114905-1"
             ]
 
         [[params.team.members]]
-            img = "dennis.jpg"
-            name = "Dennis Kumar"
-            position = "Junior Developer"
+            img = "pekka.jpg"
+            name = "Pekka Raittila"
+            position = "Development lead"
             scope = [
-                "React",
-                "Frontend development"
+                "Team management",
+                "UI/UX Design",
+                "Development",
             ]
             # For bio markdown and even multiline strings are available.
             #bio = """Nothing here yet."""
             social = [
-                ["fa-github", "https://github.com/kumardennis"],
-                ["fa-linkedin", "https://www.linkedin.com/in/dennis-kumar-511a7010b"]
-
+                ["fa-linkedin", "https://www.linkedin.com/in/pekka-raittila-99160229/"]
             ]
 
     # Client section
@@ -227,7 +226,7 @@ googleAnalytics = "UA-92114905-1"
 
         [[params.clients]]
             logo = "tsampo.png"
-            link = "https://tsampo.com/"
+            link = "https://thehub.io/startups/tsampo"
 
     # Contact section
     [params.contact]
