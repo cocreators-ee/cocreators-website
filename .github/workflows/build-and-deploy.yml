@@ -40,11 +40,10 @@ jobs:
           [[ ! -z "${FQDN}" ]] && echo "${FQDN}" > CNAME
 
           git add . && git status && git commit --message "${MESSAGE}"
-          git push -f -q "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git" "${BRANCH}"
+          git push -f -q "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${BRANCH}"
         env:
           DEPLOY_DIR: public
           FQDN: cocreators.ee
-          REPO: cocreators-ee/cocreators-ee.github.io
           MESSAGE: Deploy to GitHub Pages
-          BRANCH: master
+          BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
