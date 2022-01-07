@@ -192,6 +192,21 @@ googleAnalytics = "UA-92114905-1"
                 ["fa-linkedin", "https://www.linkedin.com/in/pekka-raittila-99160229/"]
             ]
 
+        [[params.team.members]]
+            img = "solo.jpg"
+            name = "Solo Omaru Dolley"
+            position = "Developer"
+            scope = [
+                "React",
+                "Python",
+            ]
+            # For bio markdown and even multiline strings are available.
+            #bio = """Nothing here yet."""
+            social = [
+                ["fa-github", "https://github.com/omarudolley"],
+                ["fa-linkedin", "https://www.linkedin.com/in/solo-omaru-dolley-b8b504153/"]
+            ]
+
     # Client section
     [params.clients_list]
         enable = true
